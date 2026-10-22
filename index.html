@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profile Page - Fahri Aprizal</title>
+    <style>
+        /* Reset dasar */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Pengaturan tema terang dan font */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        /* Pembungkus konten (tanpa kotak luar/border) */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* --- BAGIAN ATAS: Foto, Info, Kategori --- */
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            gap: 30px;
+        }
+
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-info h1 {
+            margin: 0 0 15px 0;
+            font-size: 32px;
+            color: #111111;
+        }
+
+        .profile-info p {
+            margin: 5px 0;
+            color: #555555;
+        }
+
+        .profile-info a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .profile-info a:hover {
+            text-decoration: underline;
+        }
+
+        .categories {
+            min-width: 180px;
+        }
+
+        .categories h3 {
+            margin-top: 0;
+            font-size: 16px;
+            border-bottom: 2px solid #eeeeee;
+            padding-bottom: 8px;
+            color: #111111;
+        }
+
+        .categories ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .categories li {
+            margin-bottom: 8px;
+            color: #555555;
+        }
+
+        .categories li::before {
+            content: "• ";
+            color: #0056b3;
+            font-weight: bold;
+        }
+
+        /* --- BAGIAN TENGAH: Paragraf --- */
+        .content-section {
+            margin-bottom: 50px;
+        }
+
+        .content-section p {
+            text-align: justify;
+            margin-bottom: 20px;
+            color: #444444;
+        }
+
+        /* --- BAGIAN BAWAH: Multimedia & Lampiran --- */
+        .bottom-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .video-container video {
+            width: 280px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .photo-grid img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .attachments {
+            min-width: 220px;
+            border: 1px solid #dddddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fcfcfc;
+        }
+
+        .attachments h3 {
+            margin-top: 0;
+            font-size: 15px;
+            border-bottom: 1px solid #dddddd;
+            padding-bottom: 10px;
+            color: #333333;
+        }
+
+        .attachments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .attachments li {
+            margin-bottom: 12px;
+        }
+
+        .attachments a {
+            color: #0056b3;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .attachments a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- BAGIAN ATAS: Foto, Biodata, Kategori -->
+        <div class="header-section">
+            <img src="https://picsum.photos/seed/fahri/200/200" alt="Foto Profil" class="profile-photo">
+            
+            <div class="profile-info">
+                <h1>Fahri Aprizal</h1>
+                <p>245 Blackfriars Road<br>Ludgate House<br>London, SE1 9UY</p>
+                <br>
+                <p>Email: <a href="mailto:fahri.aprizal@example.com">fahri.aprizal@example.com</a></p>
+                <p>Telephone: 0207 955 3705</p>
+            </div>
+            
+            <div class="categories">
+                <h3>Keahlian</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Frontend Design</li>
+                    <li>Backend Engineering</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- BAGIAN TENGAH: Paragraf Deskripsi -->
+        <div class="content-section">
+            <p>
+                Halo, saya adalah seorang Junior Programmer yang memiliki minat besar dalam dunia rekayasa perangkat lunak dan pengembangan aplikasi web. Fokus utama saya meliputi perancangan antarmuka pengguna (frontend) yang interaktif serta pembangunan arsitektur backend yang solid. Saya sangat antusias dalam memecahkan masalah teknis, menulis kode yang bersih (clean code), dan terus mempelajari pola-pola desain perangkat lunak yang terstruktur.
+            </p>
+            <p>
+                Dalam proses pengembangan, saya terbiasa menggunakan berbagai teknologi modern seperti PHP dengan framework Laravel, React, serta CSS framework seperti Tailwind CSS untuk membangun tampilan yang responsif. Selain itu, saya juga familier dengan manajemen basis data MySQL dan menggunakan sistem kontrol versi seperti Git dan GitHub. Saya terus berupaya mengasah keterampilan saya untuk menciptakan aplikasi yang fungsional, efisien, dan memberikan pengalaman pengguna yang baik.
+            </p>
+        </div>
+
+        <!-- BAGIAN BAWAH: Multimedia & Attachments -->
+        <div class="bottom-section">
+            
+            <!-- Video -->
+            <div class="video-container">
+                <video controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
+            </div>
+
+            <!-- Grid Foto -->
+            <div class="photo-grid">
+                <img src="https://picsum.photos/seed/code1/150/150" alt="Galeri 1">
+                <img src="https://picsum.photos/seed/code2/150/150" alt="Galeri 2">
+                <img src="https://picsum.photos/seed/code3/150/150" alt="Galeri 3">
+                <img src="https://picsum.photos/seed/code4/150/150" alt="Galeri 4">
+            </div>
+
+            <!-- Attachments -->
+            <div class="attachments">
+                <h3>Attachments</h3>
+                <ul>
+                    <li><a href="#">📄 Curriculum Vitae.pdf</a></li>
+                    <li><a href="#">📄 Sertifikat Kompetensi.pdf</a></li>
+                    <li><a href="#">📄 Portofolio Web.pdf</a></li>
+                    <li><a href="#">📄 Transkrip Nilai.pdf</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
