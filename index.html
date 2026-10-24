@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +41,7 @@
             height: 160px;
             object-fit: cover;
             border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .profile-info {
@@ -120,7 +121,7 @@
         .video-container video {
             width: 280px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .photo-grid {
@@ -134,7 +135,7 @@
             height: 120px;
             object-fit: cover;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .attachments {
@@ -177,21 +178,22 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
         <!-- BAGIAN ATAS: Foto, Biodata, Kategori -->
         <div class="header-section">
-            <img src="https://picsum.photos/seed/fahri/200/200" alt="Foto Profil" class="profile-photo">
-            
+            <img src="asset/img/1.png " alt="Foto Profil" class="profile-photo">
+
             <div class="profile-info">
                 <h1>Fahri Aprizal</h1>
-                <p>245 Blackfriars Road<br>Ludgate House<br>London, SE1 9UY</p>
+                <p>STT Terpadu Nurul Fikri<br>Ciherang Dramaga<br>Bogor Jawa Barat</p>
                 <br>
-                <p>Email: <a href="mailto:fahri.aprizal@example.com">fahri.aprizal@example.com</a></p>
-                <p>Telephone: 0207 955 3705</p>
+                <p>Email: <a href="mailto:aprizalf753@gmail.com">aprizalf753@gmail.com</a></p>
+                <p>Telephone: 0856 9771 5655</p>
             </div>
-            
+
             <div class="categories">
                 <h3>Keahlian</h3>
                 <ul>
@@ -205,45 +207,61 @@
         <!-- BAGIAN TENGAH: Paragraf Deskripsi -->
         <div class="content-section">
             <p>
-                Halo, saya adalah seorang Junior Programmer yang memiliki minat besar dalam dunia rekayasa perangkat lunak dan pengembangan aplikasi web. Fokus utama saya meliputi perancangan antarmuka pengguna (frontend) yang interaktif serta pembangunan arsitektur backend yang solid. Saya sangat antusias dalam memecahkan masalah teknis, menulis kode yang bersih (clean code), dan terus mempelajari pola-pola desain perangkat lunak yang terstruktur.
+                Halo, saya adalah seorang Junior Programmer yang memiliki minat besar dalam dunia rekayasa perangkat
+                lunak dan pengembangan aplikasi web. Fokus utama saya meliputi perancangan antarmuka pengguna (frontend)
+                yang interaktif serta pembangunan arsitektur backend yang solid. Saya sangat antusias dalam memecahkan
+                masalah teknis, menulis kode yang bersih (clean code), dan terus mempelajari pola-pola desain perangkat
+                lunak yang terstruktur.
             </p>
             <p>
-                Dalam proses pengembangan, saya terbiasa menggunakan berbagai teknologi modern seperti PHP dengan framework Laravel, React, serta CSS framework seperti Tailwind CSS untuk membangun tampilan yang responsif. Selain itu, saya juga familier dengan manajemen basis data MySQL dan menggunakan sistem kontrol versi seperti Git dan GitHub. Saya terus berupaya mengasah keterampilan saya untuk menciptakan aplikasi yang fungsional, efisien, dan memberikan pengalaman pengguna yang baik.
+                Dalam proses pengembangan, saya terbiasa menggunakan berbagai teknologi modern seperti PHP dengan
+                framework Laravel, React, serta CSS framework seperti Tailwind CSS untuk membangun tampilan yang
+                responsif. Selain itu, saya juga familier dengan manajemen basis data MySQL dan menggunakan sistem
+                kontrol versi seperti Git dan GitHub. Saya terus berupaya mengasah keterampilan saya untuk menciptakan
+                aplikasi yang fungsional, efisien, dan memberikan pengalaman pengguna yang baik.
             </p>
         </div>
 
         <!-- BAGIAN BAWAH: Multimedia & Attachments -->
         <div class="bottom-section">
-            
+
             <!-- Video -->
             <div class="video-container">
                 <video controls>
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    <source src="asset/video/video.mp4" type="video/mp4">
                     Browser Anda tidak mendukung tag video.
                 </video>
             </div>
 
             <!-- Grid Foto -->
             <div class="photo-grid">
-                <img src="https://picsum.photos/seed/code1/150/150" alt="Galeri 1">
-                <img src="https://picsum.photos/seed/code2/150/150" alt="Galeri 2">
-                <img src="https://picsum.photos/seed/code3/150/150" alt="Galeri 3">
-                <img src="https://picsum.photos/seed/code4/150/150" alt="Galeri 4">
+                <img src="asset/img/2.jpg" alt="Galeri 1">
+                <img src="asset/img/3.jpg" alt="Galeri 2">
+                <img src="asset/img/4.jpg" alt="Galeri 3">
+                <img src="asset/img/5.jpg" alt="Galeri 4">
             </div>
 
             <!-- Attachments -->
             <div class="attachments">
                 <h3>Attachments</h3>
                 <ul>
-                    <li><a href="#">📄 Curriculum Vitae.pdf</a></li>
-                    <li><a href="#">📄 Sertifikat Kompetensi.pdf</a></li>
-                    <li><a href="#">📄 Portofolio Web.pdf</a></li>
-                    <li><a href="#">📄 Transkrip Nilai.pdf</a></li>
+                    <li>
+                        <a href="asset/pdf/1.pdf" download="Curriculum Vitae - Fahri Aprizal.pdf">
+                            📄 Curriculum Vitae.pdf
+                        </a>
+                    </li>
+                    <li>
+                        <a href="asset/pdf/2.pdf"
+                            download="ERD - Fahri Aprizal.pdf">
+                            📄 ERD.pdf
+                        </a>
+                    </li>
                 </ul>
             </div>
-            
+
         </div>
     </div>
 
 </body>
+
 </html>
